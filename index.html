@@ -1,13 +1,454 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page GitHub</title>
-</head>
-<body>
-    <h1>Bienvenue sur mon site GitHub Pages !</h1>
-    <p>Ce site est hébergé grâce à GitHub Pages.</p>
-    <link rel="stylesheet" href="style.css">
-</body>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Nicolas Dobigeon @ University of Toulouse</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+		<!-- Personalized style -->
+        <link rel="stylesheet" href="css/add_classes.css"/>
+		
+		<link rel="shortcut icon" href="img/favicon_IRIT.ico" />
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+			
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+				
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+					<span class="h5"><img border="0" height="50" width="0" src="" /><a href="index.html">Nicolas Dobigeon @ Univ. of Toulouse</a>
+						<!--<a href="#"><img border="0" height="50" src="img/logo_uftmip.jpg"/></a>
+						<a href="#"><img border="0" height="50" src="img/logo_aniti.jpg"/></a>
+						<a href="#"><img border="0" height="50" src="img/logo_irit.jpg"/></a>-->
+					</span>
+					
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <b>Home</b><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-applications-content').show();" href="#applications">Open positions</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-biosketch-content').show();" href="#biosketch">Biosketch</a></li>								
+								<li><a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a></li>								
+								<li><a onclick="javascript:reset_menus();$('#tab-misc-content').show();" href="#misc">Miscellaneous</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a></li>								
+                            </ul>
+                        </li>
+						<li class="page-scroll">
+                            <a href="research.html">Research</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="group.html">Research group</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="publis.html">Publications</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="activities.html">Activities</a>
+                        </li>						
+						<li class="page-scroll">
+                            <a href="teaching.html">Teaching</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="curriculum.html">Curriculum</a>
+                        </li>                        
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#tab-contact-content">Contact</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+		</section>
+        
+        <!-- Home Section -->
+        <section  name="home" id="home" style="margin-top:40px">
+            <div class="container">
+                <div align="left" class="col-md-2" style="margin-top:25px"><!--%2-->
+                    <a target="_blank" href="img/photo_nd.png">
+                        <img id="mobile-img" src="img/photo_nd.png" width="175" border="0" alt=""></a>
+                </div>
+                <div align="left" style="text-align: left" class="col-md-6"><!--%5-->
+                    <h2>Nicolas Dobigeon                        
+                    </h2>
+                    
+                    <h4> Professor @ Toulouse INP<br>
+					<span class="emph">
+					    <a href="https://en.univ-toulouse.fr/" >University of Toulouse</a>, <a href="http://www.irit.fr/">IRIT</a>/<a href="http://www.inp-toulouse.fr/">INP</a>-<a href="http://www.enseeiht.fr/">ENSEEIHT</a><br/>
+					</span>						
+                    </h4>
+					<h4> <a href="https://aniti.univ-toulouse.fr/representation-learning-for-earth-observation/">AI Research Chair</a> @ ANITI<br>
+					<span class="emph">
+						<a href="http://aniti.univ-toulouse.fr/index.php/en/">Artificial and Natural Intelligence Toulouse Institute</a>
+					</span>
+                    </h4>
+					<h4> <a href="https://www.hceres.fr/sites/default/files/media/files/cv-nicolas-dobigeon.pdf">Scientific Advisor</a> @ Hcéres<br>
+					<span class="emph">
+					    <a href="https://www.hceres.fr/en" >High Council for Evaluation of Research and Higher Education</a><br/>
+					</span>						
+                    </h4>
+					<h4>
+					<a href="https://www.iufrance.fr/les-membres-de-liuf/membre/1761-nicolas-dobigeon.html">Honorary Member</a> @ IUF (Junior Class 2017)<br>
+					<span class="emph">
+						<a href="http://www.iufrance.fr/">Institut Universitaire de France</a>
+					</span>
+					</h4>
+                    
+                    
+                </div>
+                    <div id="logos" style="text-align: right"  class="col-md-13">
+					                        
+						<a href="https://en.univ-toulouse.fr/"><img border="0" width="220" style="padding: 40px 10px 0px 00px;" src="img/logo_UT.jpg"/></a><br/>
+						<a href="https://www.enseeiht.fr/en/index.html"><img border="0" width="140" style="padding: 10px 30px 0px 10px;" src="img/logo_ToulouseINP.jpg"/></a>
+						<a href="https://www.irit.fr/en/home/"><img border="0" width="85" style="padding: 10px 00px 0px 00px;" src="img/logo_IRIT.png"/></a>
+						<br/>
+                    </div>                
+					
+  
+					<!--
+                    <div id="logos"   style="text-align: middle"  class="col-md-3">
+					<br>                        
+						<a href="#"><img border="0" width="95" src="img/logo_uftmip_vertical.png"/></a>
+						<a href="#"><img border="0" width="95" src="img/logo_irit_tutelles_vertical.png"/></a><br/>
+						<a href="#"><img border="0" width="220" src="img/logo_n7.png"/></a><br/>&nbsp;
+                    </div>
+					
+					 <div id="logos" style="text-align: center"  class="col-md-3">
+					<br>     <br>                    
+						<a href="#"><img border="0" width="175" src="img/Logo_IUF_crop.png"/></a><br/><br/>
+						<a href="#"><img border="0" width="175" src="aniti/img/logo_ANITI.png"/></a><br/>&nbsp;
+                    </div>
+                    -->
+                
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+                <b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>
+                
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section name="applications" id="applications">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-applications-content').toggle();">Open positions <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+					<div class="allshow" style="display:none;"  id="tab-applications-content">
+						<hr class="star-primary">
+						<p class="lead">
+						<h2>Open positions</h2>
+						</p>
+						<p>
+						<h3>Informations for M.Sc., Ph.D. and post-doc applicants</h3>
+						If you are interest in joining our group, please read these <a href="note_students.html">guidelines</a> carefully before applying.
+						</p>
+						
+						<p><h3>Current openings</h3></p>
+						<ul>
+							<li>Assistant professor (<span class="emph">Maître de Conférences</span>) position offered at IRIT/INP-ENSEEIHT:<br/> <a href="https://www.irit.fr/wp-content/uploads/2025/02/MCF61-INP-3EA.pdf">Signal, image and machine learning</a> (at large)</span></li>
+							<li>Postdoctoral position funded by CNES : <br/><a href="https://recrutement.cnes.fr/fr/annonce/3487221-25-285-on-the-use-of-machine-learning-methods-to-boost-lisa-s-global-fit-31400-toulouse">On the use of machine learning methods to boost LISA's global fit</a></li>
+							<li>Ph.D. position funded by CNES and Magellium, as part of the ANITI <a href="https://aniti.univ-toulouse.fr/representation-learning-for-earth-observation/">RELEO</a> AI Research chair:<br/>
+							<a href="https://recrutement.cnes.fr/fr/annonce/3421387-25-068-conditional-generative-models-informed-by-physics-for-earth-observation-31400-toulouse">Conditional generative models informed by physics for Earth observation</a>
+							</li>
+						</ul>
+						<!--
+						<ul>
+							<li><span class="strike">(M.Sc.) <a href="proposals/proposal_MSc_2022_IRAP.pdf">Data fusion methods for astrophysics</a></span></li>							
+							<li><span class="strike">(M.Sc.) <a href="proposals/proposal_MSc_2022_SMARTKARST.pdf">Smart and sustainable management of karst aquifers</a></span></li>
+							<li><span class="strike">(M.Sc.) <a href="proposals/proposal_MSc_2022_BIOT.pdf">Bayesian inference and optimal transport for change detection between heterogeneous images</a></span></li>
+						</ul>
+						-->
+					</div>					
+				
+                    
+                </div>
+            </div>
+        </section>
+        
+		<!-- biosketch Section -->
+        <section name="biosketch" id="biosketch">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-biosketch-content').toggle();">Biosketch <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-biosketch-content">
+					
+                        <hr class="star-primary">
+                        <p class="lead">
+						<h2>Biosketch</h2>
+						</p>
+						<p>
+                        Nicolas Dobigeon received the Eng. degree in Electrical Engineering from <a href="http://www.inp-toulouse.fr/" >INP</a>-<a href="http://www.enseeiht.fr/">ENSEEIHT</a>, Toulouse, France, and the M.Sc. degree in Signal Processing from the <a href="http://www.inp-toulouse.fr/" >Institut National Polytechnique de Toulouse</a> (Toulouse INP), both in June 2004. He received the Ph.D. degree and Habilitation &agrave; Diriger les Recherches in Signal Processing from Toulouse INP in 2007 and 2012, respectively.
+						From 2007 to 2008, he was a Postdoctoral Research Associate with the Department of Electrical Engineering and Computer Science, <a href="http://www.umich.edu/" >University of Michigan</a>, Ann Arbor.
+						</p>
+						<p>
+						Since 2008, Nicolas Dobigeon has been with Toulouse INP (INP-ENSEEIHT, <a href="https://en.univ-toulouse.fr/" >University of Toulouse</a>) where he is currently a
+						Professor. He conducts his research within the <a href="http://sc.enseeiht.fr/">Signal and Communications</a> (SC) group of <a href="http://www.irit.fr">IRIT</a> and is an associate member of the 
+						<a href="https://perso.math.univ-toulouse.fr/aoc/">Apprentissage Optimisation Complexité</a> (AOC) project-team of <a href="http://www.cimi.univ-toulouse.fr/fr">CIMI</a>. He  currently holds an <a href="aniti/index.html">AI Research Chair</a> at the 
+						<a href="http://aniti.univ-toulouse.fr/index.php/en/">Artificial and Natural Intelligence Toulouse Institute</a> (ANITI) and he is an Honorary Member of the <a href="http://www.iufrance.fr/" >Institut Universitaire de France</a> (IUF, Junior Class 2017).
+						</p>
+						<p>
+						His recent research activities have been focused on statistical signal and image processing, with a particular interest in Bayesian inverse problems and applications to remote sensing, astronomy and astrophysics, biomedical imaging and microscopy.
+						</p>
+						<p>
+						He is currently a Senior Area Editor for <a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">
+						IEEE Trans. Signal Processing</a> (since 2022) and a Scientific Officer/Advisor for the 
+						<a href="https://www.hceres.fr/en/department-research-evaluation">Dept. of Research Evaluation</a> at the 
+						<a href="https://www.hceres.fr/en">High Council for Evaluation of Research and Higher Education</a> (Hcéres, since 2023).
+						</p>
+						<p>
+						He was an Associate Editor for 
+						<a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">IEEE Trans. Signal Processing</a> (2020-2022), 
+						<a href="https://www.journals.elsevier.com/signal-processing">Signal Processing</a> (2016-2020) and 
+						<a href="https://www.journals.elsevier.com/digital-signal-processing">Digital Signal Processing</a> (2018-2020) and  
+						a member of the <a href="https://signalprocessingsociety.org/get-involved/signal-processing-theory-and-methods">SPTM TC</a> of the 
+						IEEE Signal Processing Society (2018-2020). He was the Deputy Head of the Dept. of <a href="https://www.irit.fr/-Signaux-images,7-">Signals and Images</a> at IRIT (2017-2024), a member of the  
+						scientific working group dedicated to "<a href="https://www.univ-toulouse.fr/recherche-dynamique/strategie-scientifique-partagee">Data science and digital society</a>" 
+						for the Fed. Univ. Toulouse Midi-Pyrénées (2020-2022), a steering committee member of the French research group <a href="http://gdr-isis.fr/">GDR-ISIS</a> (2013-2018),  
+						a member of the <a href="https://www.conseil-national-des-universites.fr/">French National Council of Universities</a> (CNU/Section 61, 2012-2016) and an elected member 
+						at the Research Council of Toulouse INP (2014-2016). He was the Head of the Major Program on 
+						"<a href="http://sc.enseeiht.fr/tsi/">Signal and Image Processing</a>" (2011-2019) and the Founding Head of the Major Program on "<a href="https://scgroup-irit.github.io/iati/index.html">Artificial Intelligence for 
+						Information Processing</a>" (IATI, 2022-2024) at INP-ENSEEIHT.
+					    </p>
+						<p>
+						He is an IEEE Senior Member and a Member of the European Laboratory for Learning and Intelligent Systems (<a href="https://ellis.eu/">ELLIS</a>).
+						</p>
+                        
+                        <a href="curriculum.html" class="btn-sm btn-primary">CV (Web)&raquo;</a>
+                        <a href="doc/CV_dobigeon.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
+					</div>
+				</div>
+            </div>
+        </section>
+        
+		<!-- news Section -->
+        <section name="news" id="news">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-news-content').toggle();">News <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;"  id="tab-news-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+							<p class="lead">
+								<h2>News</h2>
+							</p>
+							 	
+							<p>
+							<span class="label label-danger">Highlights</span>
+							<span class="label label-success">Accepted papers</span>
+							<span class="label label-default">Submitted papers</span>						
+							<span class="label label-warning">Events</span>
+							<span class="label label-info">Other info</span>
+							</p>		
+							<ul>
+								<li><span class="label label-success">Jan. 2025</span> Accepted paper on <a href="https://opg.optica.org/boe/abstract.cfm?doi=10.1364/BOE.551298">dual-modality scanning for fast Raman micro-imaging</a> @ Biomed. Optics Express</li>																
+								<li><span class="label label-success">Nov. 2024</span> Accepted paper on <a href="https://arxiv.org/abs/2402.12292/">a Bayesian formulation of regularization-by-denoising (RED)</a> @ IEEE TIP</li>																
+								<li><span class="label label-success">Oct. 2024</span> Accepted paper on <a href="https://arxiv.org/abs/2407.15636/">on-the-fly (sequential) unmixing</a> @ Chemom. Intell. Lab. Systems</li>																
+								<li><span class="label label-danger">Sep. 2024</span> Appointed as Scientific Advisor @ <a href="https://www.hceres.fr/en">Hcéres</a></li>
+								<li><span class="label label-success">Aug. 2024</span> Accepted paper on <a href="https://arxiv.org/abs/2305.12149/">NF-SAILS, a sampling method for pre-trained normalizing flows</a> @ Mach. Learning</li>								
+								<li><span class="label label-default">July 2024</span> New preprint on <a href="https://arxiv.org/abs/">posterior sampling for Bayesian imaging with explicit score function-based priors</a></li>								
+								<li><span class="label label-default">July 2024</span> New preprint on <a href="https://arxiv.org/abs/2407.15636/">on-the-fly (sequential) spectral unmixing based on Kalman filtering</a></li>																
+								<li><span class="label label-default">July 2024</span> New preprint on <a href="https://arxiv.org/abs/">source separation with Sinkhorn divergence-based allocation of the source power</a></li>																
+								<li><span class="label label-success">May 2024</span> Accepted paper on <a href="https://arxiv.org/abs/2402.13867/">removal of RFI from dynamic spectra of pulsar observations</a> @ ASCOMP</li>								
+								<li><span class="label label-success">Apr. 2024</span> Accepted paper on <a href="https://arxiv.org/abs/2304.11134/">plug-and-play split Gibbs sampler</a> @ IEEE TIP</li>								
+								<li><span class="label label-success">Feb. 2024</span> Accepted paper on <a href="https://arxiv.org/abs/2307.00269/">hyperspectral unmixingwith deep autoencoder and RED</a>  @ IEEE TGRS</li>
+								<li><span class="label label-default">Feb. 2024</span> New preprint on <a href="https://arxiv.org/abs/2402.12292/">a Bayesian formulation of regularization-by-denoising (RED)</a> </li>								
+								<li><span class="label label-success">Feb. 2024</span> Accepted paper on <a href="https://arxiv.org/abs/2203.00948/">generative adversarial network for change detection</a> @ Information Fusion</li>	
+								<li><span class="label label-success">Dec. 2023</span> Accepted paper on <a href="papers/Gilet_Optics_Express_2023.pdf">superpixels-based fast Raman hyperspectral microimaging</a> @ Optics Express</li>								
+								<li><span class="label label-default">Nov. 2023</span> New preprint on <a href="https://arxiv.org/abs/2402.13867/">removal of RFI from dynamic spectra of pulsar observations</a></li>
+								<li><span class="label label-success">Nov. 2023</span> Accepted paper on <a href="papers/Ince_IEEE_GRS_Letters_2023b.pdf">spatial-spectral multiscale sparse unmixing</a> @ IEEE GRSL</li>
+								<li><span class="label label-success">Oct. 2023</span> Accepted paper on <a href="https://arxiv.org/abs/2306.17197/">generative model-based spatial regularization for multiband imaging</a> @ IEEE TIP</li>
+							</ul>
+							<p>
+								<a href="old_news.html" class="btn-sm btn-primary">Old news/events &raquo;</a>
+							</p>
+                        <!-- </div> -->
+<!--						<div align="left" class="col-md-4">
+						<i class="twittertop" style="display:none;" id="t1">							
+								<center><a class="twitter-timeline" href="https://twitter.com/NicolasDobigeon" data-chrome="nofooter" data-widget-id="346662554203992065" data-width="900"
+									data-height="300">Tweets by @NicolasDobigeon</a>
+								<script>!function (d, s, id) {
+									var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+									if (!d.getElementById(id)) {
+										js = d.createElement(s);
+										js.id = id;
+										js.src = p + "://platform.twitter.com/widgets.js";
+										fjs.parentNode.insertBefore(js, fjs);
+									}
+								}(document, "script", "twitter-wjs");</script></center>							
+						</i>
+						</div>
+-->						
+					</div>
+				</div>
+
+            </div>
+        </section>
+	
+		
+
+      				
+	
+        <!-- Miscellaneous Section -->
+        <section name="misc" id="misc">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-misc-content').toggle();">Miscellaneous <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+					<div class="allshow" style="display:none;"   id="tab-misc-content">
+					<hr class="star-primary">
+					<p class="lead">
+					<h2>Miscellaneous</h2>
+					</p>					
+		
+					Academia, a peaceful world? Check <a href="doc/Universites_et_collegialite.pdf">this</a> (in french).
+						
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    							
+
+	
+        <!-- Contact Section -->
+        <section name="contact" id="contact">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-contact-content').toggle();">Contact <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+					<div class="allshow" style="display:none;"   id="tab-contact-content">
+					<hr class="star-primary">
+					<p class="lead">
+					<h2>Contact</h2>
+					</p>						
+						        
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+						  <td  valign="top" >
+							INP - ENSEEIHT Toulouse<br/>
+									2, rue Charles Camichel<br/>
+									B.P. 7122<br/>
+									31071 Toulouse Cedex 7<br/>
+									FRANCE<br/>
+									<a href="https://goo.gl/maps/ViheA">Google map</a> / <a href="http://www.enseeiht.fr/fr/contacts.html">Access map</a>
+						  </td>
+						  <td  valign="top" >
+							Office : F420 - 4th floor<br/>
+							Tel. : (+33) 05 34 32 22 40<br/>
+							Fax : (+33) 05 34 32 21 57<br/>
+							E-mail : dobigeon [at] n7 [dot] fr<br/>
+							www : <a href="https://ndobigeon.github.io/" >https://ndobigeon.github.io/</a><br/>
+						   <a href="https://twitter.com/NicolasDobigeon?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @NicolasDobigeon</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+						  </td>
+						</tr>
+					   </table>
+					</div>					
+                    
+                </div>
+            </div>
+        </section>
+        					
+	 
+        
+        <hr class="star-primary">
+        <footer>
+            <small>
+                <center>
+                    © 2020 | N. Dobigeon. Credits: D. Zeinalipour &amp; AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+					<a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
 </html>
