@@ -1,133 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elhadji Cisse Faye @ Institut Denis Poisson (IDP)</title>
-    <link rel="stylesheet" href="font-awesome.min.css">
-    <link rel="stylesheet" href="bootstraps.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elhadji Cisse Faye @ Institut Denis Poisson</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="add_classes.css">
-    <script src="jQuery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="menucollapse.js"></script>
-    <script src="arrow78.js"></script>
-    <script src="custom.js"></script>
 </head>
-<body id="page-top" class="index">
+
+<body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <span class="h5"><a href="index.html">Elhadji Cisse Faye @ IDP</a></span>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#publis">Publications</a></li>
-                    <li><a href="#teaching">Teaching</a></li>
-                    <li><a href="#contact">Contact</a></li>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Elhadji Cisse Faye @ IDP</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href#publis">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Home Section -->
-    <section id="home" style="margin-top:40px">
+    <section id="home" class="py-5">
         <div class="container">
-            <div class="col-md-2" style="margin-top:25px">
-                <a target="_blank" href="IMG_2598.jpeg">
-                    <img src="IMG_2598.jpeg" width="175" alt="Elhadji Cisse Faye">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <h2>Elhadji Cisse Faye</h2>
-                <h4>Ph.D. Student<br>
-                    <a href="https://www.idpoisson.fr">Institut Denis Poisson</a>
-                </h4>
-            </div>
-            <div class="col-md-13">
-                <a href="https://www.idpoisson.fr">
-                    <img src="logo-big-2.png" width="220" style="padding: 40px 10px 0px 0px;" alt="IDP Logo">
-                </a>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="IMG_2598.jpeg" alt="Profile Photo" class="img-fluid rounded-circle w-75">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-4">Elhadji Cisse Faye</h1>
+                    <h4 class="text-muted">Ph.D. Student</h4>
+                    <p class="lead">
+                        <a href="https://www.idpoisson.fr" class="text-decoration-none">
+                            Institut Denis Poisson
+                        </a>
+                    </p>
+                    <img src="logo-big-2.png" alt="IDP Logo" class="img-fluid" style="max-width: 220px;">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Research Section -->
-    <section id="research">
+    <section id="research" class="py-5 bg-light">
         <div class="container">
-            <div class="col-md-12">
-                <h2>Research</h2>
-                <p><a href="research.html" class="btn-sm btn-primary">Learn more &raquo;</a></p>
+            <h2 class="mb-4">Research</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">[Research summary placeholder]</p>
+                    <a href="research.html" class="btn btn-primary">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Publications Section -->
-    <section id="publis">
+    <section id="publis" class="py-5">
         <div class="container">
-            <div class="col-md-12">
-                <h2>Publications</h2>
-                <p>Here is a list of my recent publications. For a complete list, please visit my <a href="publis.html">publications page</a>.</p>
-                <ul>
-                    <li><span class="label label-success">2024</span> Accepted paper on <a href="#"> </a> @ </li>
-                    <li><span class="label label-success">2023</span> Accepted paper on <a href="#"> </a> @ </li>
-                </ul>
-                <p><a href="publis.html" class="btn-sm btn-primary">View all publications &raquo;</a></p>
+            <h2 class="mb-4">Publications</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    2024 - [Publication Title] @ [Journal/Conference]
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    2023 - [Publication Title] @ [Journal/Conference]
+                </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Teaching Section -->
-    <section id="teaching">
-        <div class="container">
-            <div class="col-md-12">
-                <h2>Teaching</h2>
-                <p><a href="teaching.html" class="btn-sm btn-primary">Learn more &raquo;</a></p>
-            </div>
+            <a href="publis.html" class="btn btn-primary mt-3">View All Publications</a>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="py-5 bg-light">
         <div class="container">
-            <div class="col-md-12">
-                <h2>Contact</h2>
-                <table width="100%">
-                    <tr>
-                        <td valign="top">
-                            IDP - Institut Denis Poisson<br>
-                            1 Rue de Chartres<br>
-                            45100 Orléans<br>
-                            FRANCE<br>
-                        </td>
-                        <td valign="top">
-                            Office : 422<br>
-                            Tel. : (+33) <br>
-                            E-mail : elhadji.cisse-faye [at]univ-orleans[dot] fr<br>
-                            www : <a href="https://elhadjicissefaye.github.io/">https://elhadjicissefaye.github.io/</a><br>
-                        </td>
-                    </tr>
-                </table>
+            <h2 class="mb-4">Contact</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <address>
+                        <strong>Institut Denis Poisson</strong><br>
+                        1 Rue de Chartres<br>
+                        45100 Orléans<br>
+                        France
+                    </address>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li>Office: 422</li>
+                        <li>Email: <a href="mailto:elhadji.cisse-faye@univ-orleans.fr">elhadji.cisse-faye@univ-orleans.fr</a></li>
+                        <li>Website: <a href="https://elhadjicissefaye.github.io/">elhadjicissefaye.github.io</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <small>
-            <center>
-                © 2024 | Elhadji Cisse Faye.
-                <a onclick="javascript:$('#credit').toggle();"><img src="images/ccby.png" alt="CC BY"></a>
-                <div style="display:none;" id="credit">
-                    [AR template available under Creative Commons CC BY 4.0 licence:
-                    <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
-                        https://github.com/dmsl/academic-responsive-template
-                    </a> ]
-                </div>
-            </center>
-        </small>
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <small>&copy; 2024 Elhadji Cisse Faye. Template by <a href="https://github.com/dmsl/academic-responsive-template" class="text-light">AR template</a></small>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
