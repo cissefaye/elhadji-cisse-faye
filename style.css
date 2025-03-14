@@ -6,3 +6,70 @@ body {
 h1 {
     color: #333;
 }
+
+/* Mode clair (par défaut) */
+body.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.light-mode .navbar {
+    background-color: #f8f9fa !important;
+}
+
+.light-mode .navbar-brand, .light-mode .nav-link {
+    color: #333333 !important;
+}
+
+.light-mode .btn-outline-secondary {
+    border-color: #333333;
+    color: #333333;
+}
+
+.light-mode .btn-outline-secondary:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Mode sombre */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+}
+
+.dark-mode .navbar-brand, .dark-mode .nav-link {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .btn-outline-secondary {
+    border-color: #e0e0e0;
+    color: #e0e0e0;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+    background-color: #e0e0e0;
+    color: #121212;
+}
+
+/* Amélioration du contraste */
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Accessibilité des images */
+img {
+    max-width: 100%;
+    height: auto;
+}
