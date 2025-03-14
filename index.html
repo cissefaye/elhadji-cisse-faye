@@ -23,11 +23,9 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#page-top">Elhadji Cisse Faye @ IDP</a>
-            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
@@ -44,7 +42,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Home Section -->
     <section id="home" class="py-5">
         <div class="container">
@@ -318,7 +315,7 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-light py-3">
+        <footer class="bg-dark text-light py-3">
         <div class="container text-center">
             <small>&copy; 2025 Elhadji Cisse Faye. Template by <a href="https://github.com/dmsl/academic-responsive-template" class="text-light">AR template</a></small>
         </div>
@@ -326,31 +323,6 @@
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Gestion du mode sombre/clair
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-
-        // Fonction pour basculer entre les modes
-        function toggleTheme() {
-            body.classList.toggle('dark-mode');
-            body.classList.toggle('light-mode');
-            const isDarkMode = body.classList.contains('dark-mode');
-            themeToggle.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i> Light Mode' : '<i class="fas fa-moon"></i> Dark Mode';
-            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-        }
-
-        // Appliquer le thème sauvegardé
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        if (savedTheme === 'dark') {
-            body.classList.add('dark-mode');
-            themeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-        } else {
-            body.classList.add('light-mode');
-        }
-
-        // Écouteur d'événement pour le bouton
-        themeToggle.addEventListener('click', toggleTheme);
-    </script>
+    <script src="scripts.js"></script> <!-- Fichier JavaScript personnalisé -->
 </body>
 </html>
