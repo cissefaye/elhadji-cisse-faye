@@ -45,22 +45,3 @@ body.dark-mode {
     background-color: #e0e0e0;
     color: #121212;
 }
-
-/* Amélioration du contraste */
-h1, h2, h3, h4, h5, h6 {
-    color: inherit;
-}
-
-a {
-    color: #007bff;
-}
-
-a:hover {
-    color: #0056b3;
-}
-
-/* Accessibilité des images */
-img {
-    max-width: 100%;
-    height: auto;
-}
