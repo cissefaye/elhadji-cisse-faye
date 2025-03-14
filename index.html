@@ -298,6 +298,18 @@
                         <li>Email: <a href="mailto:elhadji.cisse-faye@univ-orleans.fr">elhadji.cisse-faye@univ-orleans.fr</a></li>
                         <li>Website: <a href="https://elhadjicissefaye.github.io/">elhadjicissefaye.github.io</a></li>
                     </ul>
+                    <!-- Liens vers les réseaux sociaux -->
+                    <div class="mt-3">
+                        <a href="https://www.linkedin.com/in/elhadji-cisse-faye" class="btn btn-outline-primary me-2">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Elhadji-Cisse-Faye" class="btn btn-outline-primary me-2">
+                            <i class="fab fa-researchgate"></i> ResearchGate
+                        </a>
+                        <a href="https://twitter.com/elhadji_cisse" class="btn btn-outline-primary">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -311,5 +323,16 @@
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Ajout d'animations au survol des éléments du menu
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('mouseover', () => {
+                gsap.to(link, { duration: 0.3, scale: 1.1, ease: "power2.out" });
+            });
+            link.addEventListener('mouseout', () => {
+                gsap.to(link, { duration: 0.3, scale: 1, ease: "power2.out" });
+            });
+        });
+    </script>
 </body>
 </html>
