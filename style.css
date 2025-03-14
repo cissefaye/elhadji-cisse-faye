@@ -1,12 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-h1 {
-    color: #333;
-}
-
 /* Mode clair (par défaut) */
 body.light-mode {
     background-color: #ffffff;
