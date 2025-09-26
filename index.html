@@ -1,330 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Elhadji Cisse Faye </title>
-    
-    <!-- Meta descriptions pour le SEO -->
-    <meta name="description" content="Elhadji Cisse Faye, Ph.D. Student at Institut Denis Poisson, specializing in Bayesian approaches and inverse problems in imaging.">
-    <meta name="keywords" content="Elhadji Cisse Faye, Bayesian Inference, Inverse Problems, Imaging, Institut Denis Poisson">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Fichier CSS personnalisé -->
-    
-    <!-- Script pour les animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elhadji Cisse Faye – Ph.D. Student, Institut Denis Poisson</title>
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Elhadji Cisse Faye, Ph.D. student at Institut Denis Poisson. Research: Bayesian inference, inverse problems in imaging, MCMC, uncertainty quantification." />
+  <meta name="keywords" content="Elhadji Cisse Faye, Bayesian Inference, Inverse Problems, Imaging, Institut Denis Poisson, MCMC, Uncertainty Quantification" />
+  <meta name="author" content="Elhadji Cisse Faye" />
+  <link rel="canonical" href="https://cissefaye.github.io/elhadji-cisse-faye/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Elhadji Cisse Faye – Ph.D. Student, Institut Denis Poisson" />
+  <meta property="og:description" content="Bayesian approaches to inverse problems in imaging; MCMC; deep learning; UQ." />
+  <meta property="og:url" content="https://cissefaye.github.io/elhadji-cisse-faye/" />
+  <meta property="og:image" content="https://cissefaye.github.io/elhadji-cisse-faye/assets/og-card.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-CQ/4S6bJbVbG3H2vS4B5J1fM3w0Q2oZJQyE0yPpVwq1y0V3lFQeK8y0g7s2k9b9k" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAI6Gx1F4XwjKf0R8N+KQ5bO5J5y5YjNQ9+XJQ6C9Yxw2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Animations (optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+
+  <!-- Favicon (replace with your files) -->
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+  <!-- Structured data (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Elhadji Cisse Faye",
+    "jobTitle": "Ph.D. Student",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Institut Denis Poisson"
+    },
+    "url": "https://cissefaye.github.io/elhadji-cisse-faye/",
+    "sameAs": [
+      "https://scholar.google.fr/citations?hl=en&user=m-y3JawAAAAJ",
+      "https://www.linkedin.com/in/elhadji-cisse-faye-22029b166"
+    ]
+  }
+  </script>
+
+  <style>
+    /* Small, helpful tweaks without relying solely on styles.css */
+    :root { scroll-behavior: smooth; }
+    body { padding-top: 4.5rem; }
+    .avatar { aspect-ratio: 1/1; object-fit: cover; }
+    .skip-link { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
+    .skip-link:focus { position:static; width:auto; height:auto; }
+    /* Ensure lists are not nested inside <p> */
+    .badge-wrap .badge { white-space: normal; }
+  </style>
 </head>
 
 <body id="page-top" class="light-mode">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">Elhadji Cisse Faye @ IDP</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#publis">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#talks">Talks and Seminars</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-                <!-- Bouton pour basculer entre les modes sombre et clair -->
-		<!--
-                <button id="theme-toggle" class="btn btn-outline-secondary ms-3">
-                    <i class="fas fa-moon"></i> Dark Mode
-                </button>
-		    -->
-            </div>
-        </div>
-    </nav>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top">Elhadji Cisse Faye @ IDP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publis">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#talks">Talks &amp; Seminars</a></li>
+          <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
     <!-- Home Section -->
     <section id="home" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Photo de profil -->
-                <div class="col-md-4 text-center">
-                    <img src="picture_faye.pdf" alt="Profile Photo of Elhadji Cisse Faye" class="img-fluid rounded-circle w-75">
-                </div>
-                <!-- Texte "About" -->
-                <div class="col-md-8">
-                    <h1 class="display-4">Elhadji Cisse Faye</h1>
-                    <h4 class="text-muted">Ph.D. Student</h4>
-                    <p class="lead">
-                        <a href="https://www.idpoisson.fr" class="text-decoration-none">
-                            Institut Denis Poisson
-                        </a>
-                    </p>
-                    <img src="logo-big-2.png" alt="Institut Denis Poisson Logo" class="img-fluid" style="max-width: 220px;">
-                    
-                    <!-- Section About intégrée ici -->
-                    <div class="mt-4">
-                        <h3>About Me</h3>
-                        <p class="lead">
-                            I am a Ph.D. student at the Institut Denis Poisson, specializing in Bayesian approaches and inverse problems in imaging. My research focuses on combining data-driven priors with Markov Chain Monte Carlo methods to solve complex imaging problems. I am passionate about interdisciplinary applications, particularly in medical imaging and image restoration.
-                        </p>
-                        <p>
-                            Outside of research, I enjoy engaging with the scientific community through seminars and workshops. I am also an avid learner, constantly exploring new techniques in deep learning and uncertainty quantification.
-                        </p>
-                        <a href="resume.pdf" class="btn btn-primary mt-3" download>
-                            <i class="fas fa-download me-2"></i>Download CV
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <!-- Profile photo -->
+          <div class="col-md-4 text-center">
+            <!-- Prefer JPG/PNG instead of PDF for web images -->
+            <img src="assets/picture_faye.jpg" alt="Portrait of Elhadji Cisse Faye" class="img-fluid rounded-circle w-75 avatar" loading="eager" />
+          </div>
+          <!-- About text -->
+          <div class="col-md-8">
+            <h1 class="display-4 mb-1">Elhadji Cisse Faye</h1>
+            <p class="h5 text-muted mb-3">Ph.D. Student</p>
+            <p class="lead mb-2">
+              <a href="https://www.idpoisson.fr" class="text-decoration-none" rel="noopener" target="_blank">Institut Denis Poisson</a>
+            </p>
+            <img src="assets/logo-big-2.png" alt="Institut Denis Poisson logo" class="img-fluid mb-3" style="max-width: 220px;" />
+
+            <div class="mt-3">
+              <h2 class="h3">About Me</h2>
+              <p class="lead">
+                I am a Ph.D. student at the Institut Denis Poisson, working on Bayesian approaches to inverse problems in imaging. My research combines data-driven priors with Markov chain Monte Carlo (MCMC) methods to solve challenging reconstruction tasks. I am particularly interested in uncertainty quantification and interdisciplinary applications in medical imaging and image restoration.
+              </p>
+              <p>
+                I regularly engage with the scientific community through seminars and workshops and continuously explore recent techniques in deep learning and probabilistic modeling.
+              </p>
+              <a href="assets/resume.pdf" class="btn btn-primary mt-2" download>
+                <i class="fas fa-download me-2" aria-hidden="true"></i><span class="visually-hidden">Download</span> CV
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </section>
+
     <!-- Research Section -->
     <section id="research" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="mb-4">Research</h2>
-            
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="h-100 p-4 bg-white rounded shadow-sm">
-                        <h4 class="text-primary mb-3">
-                            <i class="fas fa-cogs me-2"></i>Inverse Problems in Imaging
-                        </h4>
-                        <p class="mb-0">
-                            My research focuses on solving inverse problems in imaging by combining data-driven priors with Markov Chain Monte Carlo methods to reconstruct unknown images from its degraded and noisy versions.
-			</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="h-100 p-4 bg-white rounded shadow-sm">
-                        <h4 class="text-primary mb-3">
-                            <i class="fas fa-chart-line me-2"></i>Bayesian Approaches
-                        </h4>
-                        <p class="mb-0">
-                            Development of Bayesian inference methods for solving inverse problems, incorporating prior knowledge through probabilistic models to achieve robust parameter estimation.  
-			</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="h-100 p-4 bg-white rounded shadow-sm">
-                        <h4 class="text-primary mb-3">
-                            <i class="fas fa-satellite me-2"></i>Interdisciplinary Applications
-                        </h4>
-                        <p class="mb-0">
-                            Applications in image restoration, medical imaging:
-                            <ul class="list-unstyled">
-                                <li>• Denoising and deblurring</li>
-                                <li>• Inpainting and super-resolution</li>
-                                <li>• Positron emission tomography</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="h-100 p-4 bg-white rounded shadow-sm">
-                        <h4 class="text-primary mb-3">
-                            <i class="fas fa-brain me-2"></i>Research interests
-                        </h4>
-                        <p class="mb-0">
-                            <div class="row mt-2">
-                                <div class="col-6">
-                                    <span class="badge bg-primary mb-2">Markov chain Monte Carlo algorithms</span><br>
-                                    <span class="badge bg-primary mb-2">Bayesian Inference</span>
-				    <span class="badge bg-primary mb-2">Uncertainty Quantification</span>
-                                </div>
-                                <div class="col-6">
-                                    <span class="badge bg-primary mb-2">Deep Learning</span><br>
-                                    <span class="badge bg-primary mb-2">Inverse Problems</span>
-                                </div>
-                            </div>
-                        </p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="mb-4">Research</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="h-100 p-4 bg-white rounded shadow-sm">
+              <h3 class="h4 text-primary mb-3">
+                <i class="fas fa-cogs me-2" aria-hidden="true"></i>Inverse Problems in Imaging
+              </h3>
+              <p class="mb-0">
+                I study inverse problems in imaging, combining data-driven priors with MCMC methods to reconstruct unknown images from degraded and noisy measurements.
+              </p>
             </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-4 bg-white rounded shadow-sm">
+              <h3 class="h4 text-primary mb-3">
+                <i class="fas fa-chart-line me-2" aria-hidden="true"></i>Bayesian Approaches
+              </h3>
+              <p class="mb-0">
+                I develop Bayesian inference methods for inverse problems, leveraging prior knowledge through probabilistic models to obtain robust estimators and credible uncertainty quantification.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-4 bg-white rounded shadow-sm">
+              <h3 class="h4 text-primary mb-3">
+                <i class="fas fa-satellite me-2" aria-hidden="true"></i>Interdisciplinary Applications
+              </h3>
+              <p class="mb-2">Applications include image restoration and medical imaging:</p>
+              <ul class="mb-0">
+                <li>Denoising and deblurring</li>
+                <li>Inpainting and super-resolution</li>
+                <li>Positron emission tomography</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-4 bg-white rounded shadow-sm">
+              <h3 class="h4 text-primary mb-3">
+                <i class="fas fa-brain me-2" aria-hidden="true"></i>Research Interests
+              </h3>
+              <div class="row badge-wrap">
+                <div class="col-6">
+                  <span class="badge bg-primary mb-2">Markov chain Monte Carlo</span><br />
+                  <span class="badge bg-primary mb-2">Bayesian inference</span><br />
+                  <span class="badge bg-primary mb-2">Uncertainty quantification</span>
+                </div>
+                <div class="col-6">
+                  <span class="badge bg-primary mb-2">Deep learning</span><br />
+                  <span class="badge bg-primary mb-2">Inverse problems</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Publications Section -->
     <section id="publis" class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Publications</h2>
-	    <p>An alternative is to check my <a href="https://scholar.google.fr/citations?hl=en&user=m-y3JawAAAAJ" rel="external nofollow noopener" target="_blank">Google scholar page</a>.</p>
+      <div class="container">
+        <h2 class="mb-3">Publications</h2>
+        <p class="mb-4">Alternatively, see my <a href="https://scholar.google.fr/citations?hl=en&user=m-y3JawAAAAJ" rel="noopener nofollow" target="_blank">Google Scholar page</a>.</p>
 
-	    <h3 id="preprint">preprint</h3>
-            <div class="list-group">
-		<a href="#" class="list-group-item list-group-item-action">
-                2025 - E. C. Faye, M. D. Fall and N. Dobigeon, "Efficient posterior sampling for Bayesian imaging with explicit score function-based priors," submitted. 
-		</a>
-		<a href="#" class="list-group-item list-group-item-action">
-                2024 - M.D. Fall and E. C.Faye, "Evidential Deep Learning for Uncertainty Quantification in Knee Osteoarthritis diagnosis ", Submitted.
-		</a>
+        <h3 id="preprint" class="h4 mt-4">Preprints</h3>
+        <div class="list-group mb-3">
+          <span class="list-group-item">
+            2025 – E. C. Faye, M. D. Fall, N. Dobigeon. “Efficient posterior sampling for Bayesian imaging with explicit score function‑based priors,” submitted.
+          </span>
+          <span class="list-group-item">
+            2024 – M. D. Fall, E. C. Faye. “Evidential Deep Learning for Uncertainty Quantification in Knee Osteoarthritis Diagnosis,” submitted.
+          </span>
         </div>
-	    	<h3 id="journal-papers">journal papers</h3>
-	    <div class="list-group">
-			<a href="https://arxiv.org/abs/2402.12292/" class="list-group-item list-group-item-action">
-		   		2024 - E. C. Faye, M. D. Fall and N. Dobigeon, "Regularization by denoising: Bayesian model and Langevin-within-split Gibbs sampling", IEEE Trans. Image Processing, vol. 34, pp. 221-234, Jan. 2025.
-			</a>
+
+        <h3 id="journal-papers" class="h4 mt-4">Journal Papers</h3>
+        <div class="list-group mb-3">
+          <a href="https://arxiv.org/abs/2402.12292" class="list-group-item list-group-item-action" rel="noopener" target="_blank">
+            2025 – E. C. Faye, M. D. Fall, N. Dobigeon. “Regularization by denoising: Bayesian model and Langevin‑within‑split Gibbs sampling,” IEEE Trans. Image Processing, 34:221–234, Jan. 2025.
+          </a>
         </div>
-	    <h3 id="conference-papers">conference papers</h3>
-	    <div class="list-group">
-		<a href="https://hal.science/hal-04774763/document" class="list-group-item list-group-item-action">
-		   2025 - M.D. Fall and E.C. Faye, "Which uncertainty quantification method in deep learning models for knee Osteoarthritis diagnosis?" to appear, Proc. of IEEE Statistical Signal Processing Workshop (SSP).	
-		</a>
-		<a href="https://hal.science/hal-04774763/document" class="list-group-item list-group-item-action">
-		   2024 - E. C. Faye, M. D. Fall, A. Chetouani and N. Dobigeon "Bayesian formulation of regularization by denoising - Model and Monte Carlo sampling," in Proc. IEEE Int. Workshop Multimedia Signal Processing (MMSP), West Lafayette, USA, Oct. 2024.
-		</a>
+
+        <h3 id="conference-papers" class="h4 mt-4">Conference Papers</h3>
+        <div class="list-group">
+          <a href="https://hal.science/hal-04774763/document" class="list-group-item list-group-item-action" rel="noopener" target="_blank">
+            2025 – M. D. Fall, E. C. Faye. “Which uncertainty quantification method in deep learning models for knee osteoarthritis diagnosis?” To appear, Proc. IEEE Statistical Signal Processing Workshop (SSP).
+          </a>
+          <a href="https://hal.science/hal-04774763/document" class="list-group-item list-group-item-action" rel="noopener" target="_blank">
+            2024 – E. C. Faye, M. D. Fall, A. Chetouani, N. Dobigeon. “Bayesian formulation of regularization by denoising – Model and Monte Carlo sampling,” Proc. IEEE Int. Workshop on Multimedia Signal Processing (MMSP), West Lafayette, USA, Oct. 2024.
+          </a>
         </div>
-		
-           <!-- <a href="publis.html" class="btn btn-primary mt-3">View All Publications</a>-->
-        </div>
+      </div>
     </section>
 
-   <!-- Section for Talks and Seminars -->
-<section id="talks" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="mb-4">Talks and Seminars</h2>
+    <!-- Talks and Seminars -->
+    <section id="talks" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Talks &amp; Seminars</h2>
         <div class="list-group">
-	    <!-- Événements passés et à venir -->
-                <a href="#" class="list-group-item list-group-item-action">
-                    December 2024, Paris: Rencontres des jeunes chercheurs africains - Oral Presentation.
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    October 2024, Orléans: Journée scientifique AI.iO - Oral Presentation.
-                </a>
-	    <a href="#" class="list-group-item list-group-item-action">
-                October 2024, West-Lafayette: IEEE 26th International Workshop on Multimedia Signal Processing - Poster Session.
-            </a>
-	    <a href="#" class="list-group-item list-group-item-action">
-                June 2024, Eindhoven : Generative Modeling Summer School - Poster Session.
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                June 2024, Nouan-le-Fuzelier: Semaine des jeunes de l'IDP - Oral Presentation.
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                December 2023, Paris: ANR  BAyesian nonparametrics, Complex models and Kernels, Uncertainty quantification and deeP method (BACKUP) - Oral Presentation.
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                November 2023, Orléans: GT-PITA Seminar - Inverse Problems: Theories and Applications - Oral Presentation.
-            </a>
-	    <a href="#" class="list-group-item list-group-item-action">
-                June 2023, Nouan-le-Fuzelier: Semaine des jeunes de l'IDP - Oral Presentation.
-            </a>
+          <span class="list-group-item">December 2024, Paris: Rencontres des jeunes chercheurs africains – Oral presentation.</span>
+          <span class="list-group-item">October 2024, Orléans: Journée scientifique AI.iO – Oral presentation.</span>
+          <span class="list-group-item">October 2024, West Lafayette: IEEE 26th International Workshop on Multimedia Signal Processing – Poster session.</span>
+          <span class="list-group-item">June 2024, Eindhoven: Generative Modeling Summer School – Poster session.</span>
+          <span class="list-group-item">June 2024, Nouan‑le‑Fuzelier: Semaine des jeunes de l'IDP – Oral presentation.</span>
+          <span class="list-group-item">December 2023, Paris: ANR BACKUP – Oral presentation.</span>
+          <span class="list-group-item">November 2023, Orléans: GT‑PITA Seminar – Oral presentation.</span>
+          <span class="list-group-item">June 2023, Nouan‑le‑Fuzelier: Semaine des jeunes de l'IDP – Oral presentation.</span>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <!-- Teaching Section -->
-    <section id="teaching" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="mb-4">Teaching</h2>
-            
-            <div class="row g-4">
-                <!-- 2023-2024 -->
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="card-title mb-0">
-                                <i class="fas fa-chalkboard-teacher me-2"></i>2023-2024
-                            </h5>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-start">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">Mathematics for Computer Science</div>
-                                    </div>
-                                    <span class="badge bg-primary rounded-pill">L1</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-start">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">Descriptive Statistics</div>
-                                    </div>
-                                    <span class="badge bg-primary rounded-pill">L1</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-start">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">Probability Theory</div>
-                                    </div>
-                                    <span class="badge bg-primary rounded-pill">L1</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2024-2025 -->
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="card-title mb-0">
-                                <i class="fas fa-chalkboard-teacher me-2"></i>2024-2025
-                            </h5>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-start">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">Mathematics for Computer Science</div>
-                                    </div>
-                                    <span class="badge bg-primary rounded-pill">L1</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <section id="teaching" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Teaching</h2>
+        <div class="row g-4">
+          <!-- 2023–2024 -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-header bg-primary text-white">
+                <h3 class="h5 mb-0">
+                  <i class="fas fa-chalkboard-teacher me-2" aria-hidden="true"></i>2023–2024
+                </h3>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto"><span class="fw-bold">Mathematics for Computer Science</span></div>
+                    <span class="badge bg-primary rounded-pill" aria-label="Level L1">L1</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto"><span class="fw-bold">Descriptive Statistics</span></div>
+                    <span class="badge bg-primary rounded-pill" aria-label="Level L1">L1</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto"><span class="fw-bold">Probability Theory</span></div>
+                    <span class="badge bg-primary rounded-pill" aria-label="Level L1">L1</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+
+          <!-- 2024–2025 -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-header bg-primary text-white">
+                <h3 class="h5 mb-0">
+                  <i class="fas fa-chalkboard-teacher me-2" aria-hidden="true"></i>2024–2025
+                </h3>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto"><span class="fw-bold">Mathematics for Computer Science</span></div>
+                    <span class="badge bg-primary rounded-pill" aria-label="Level L1">L1</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Contact</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <address>
-                        <strong>Institut Denis Poisson</strong><br>
-                        1 Rue de Chartres<br>
-                        45100 Orléans<br>
-                        France
-                    </address>
-                </div>
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li>Office: E22</li>
-                        <li>Email: <a href="mailto:elhadji.cisse-faye@univ-orleans.fr">elhadji.cisse-faye@univ-orleans.fr</a></li>
-                        <li>Website: <a href="https://cissefaye.github.io/elhadji-cisse-faye/">elhadjicissefaye.github.io</a></li>
-                    </ul>
-                    <!-- Liens vers les réseaux sociaux -->
-                    <div class="mt-3">
-                        <a href="https://linkedin.com/in/elhadji-cisse-faye-22029b166" class="btn btn-outline-primary me-2">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                       <!-- <a href="https://www.researchgate.net/profile/Elhadji-Cisse-Faye" class="btn btn-outline-primary me-2">
-                            <i class="fab fa-researchgate"></i> ResearchGate
-                        </a>
-                        <a href="https://twitter.com/elhadji_cisse" class="btn btn-outline-primary">
-                            <i class="fab fa-twitter"></i> Twitter
-                        </a>
-			-->
-                    </div>
-                </div>
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Contact</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <address>
+              <strong>Institut Denis Poisson</strong><br />
+              1 Rue de Chartres<br />
+              45100 Orléans<br />
+              France
+            </address>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled mb-3">
+              <li>Office: E22</li>
+              <li>Email: <a href="mailto:elhadji.cisse-faye@univ-orleans.fr">elhadji.cisse-faye@univ-orleans.fr</a></li>
+              <li>Website: <a href="https://cissefaye.github.io/elhadji-cisse-faye/" rel="noopener" target="_blank">elhadjicissefaye.github.io</a></li>
+            </ul>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="https://www.linkedin.com/in/elhadji-cisse-faye-22029b166" class="btn btn-outline-primary" rel="noopener" target="_blank" aria-label="LinkedIn profile">
+                <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+              </a>
+              <!-- Optional platforms -->
+              <!--
+              <a href="https://www.researchgate.net/profile/Elhadji-Cisse-Faye" class="btn btn-outline-primary" rel="noopener" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate</a>
+              <a href="https://twitter.com/elhadji_cisse" class="btn btn-outline-primary" rel="noopener" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+              -->
             </div>
+          </div>
         </div>
+      </div>
     </section>
+  </main>
 
-        <footer class="bg-dark text-light py-3">
-        <div class="container text-center">
-            <small>&copy; 2025 Elhadji Cisse Faye. Template by <a href="https://github.com/dmsl/academic-responsive-template" class="text-light">AR template</a></small>
-        </div>
-    </footer>
+  <footer class="bg-dark text-light py-3">
+    <div class="container text-center">
+      <small>&copy; <span id="year"></span> Elhadji Cisse Faye. Template adapted from <a href="https://github.com/dmsl/academic-responsive-template" class="text-light" rel="noopener" target="_blank">AR template</a>.</small>
+    </div>
+  </footer>
 
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts.js"></script> <!-- Fichier JavaScript personnalisé -->
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Example GSAP animation (optional, remove if unused)
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.gsap) {
+        gsap.from('#home h1', { y: 20, opacity: 0, duration: 0.6, ease: 'power2.out' });
+      }
+    });
+  </script>
+  <script src="scripts.js"></script>
 </body>
 </html>
