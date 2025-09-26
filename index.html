@@ -21,7 +21,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Fichier CSS personnalisé -->
+    <link rel="stylesheet" href="styles.css">
 
     <style>
         body {
@@ -60,6 +60,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#thesis">Thesis</a></li>
                     <li class="nav-item"><a class="nav-link" href="#publis">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="#talks">Talks</a></li>
                     <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
@@ -90,7 +91,6 @@
                     </p>
                     <img src="logo-big-2.png" alt="Institut Denis Poisson Logo" class="img-fluid" style="max-width: 220px;">
                     
-                    <!-- Section About intégrée ici -->
                     <div class="mt-4">
                         <h3>About Me</h3>
                         <p class="lead">
@@ -109,119 +109,92 @@
     <section id="research" class="py-5 bg-light">
         <div class="container">
             <h2 class="mb-4">Research</h2>
-            <!-- Même contenu que ton code actuel -->
+            <!-- Ton contenu de recherche inchangé -->
         </div>
     </section>
-    
-<!-- Thesis Section -->
-<section id="thesis" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="mb-4">Ph.D. Thesis</h2>
-        <p><strong>Title:</strong> Bayesian approaches for inverse problems in imaging: models, algorithms, and applications.</p>
-        <p><strong>Supervisors:</strong> Mame Diarra Fall (Université d’Orléans), Nicolas Dobigeon (Université de Toulouse).</p>
-        <p><strong>Affiliation:</strong> Institut Denis Poisson (Université d’Orléans / Université de Tours / CNRS).</p>
-        
-        <h4>Abstract</h4>
-        <p>
-            This thesis addresses inverse problems in imaging under a Bayesian framework. 
-            The central focus is on the integration of data-driven priors into probabilistic models, 
-            combined with advanced Markov Chain Monte Carlo (MCMC) algorithms such as Langevin-within-split Gibbs sampling and 
-            Hessian Riemannian methods. We investigate theoretical properties, including convergence and uncertainty quantification, 
-            and demonstrate applications in medical imaging (e.g., positron emission tomography) and general image restoration tasks 
-            (denoising, deblurring, inpainting, super-resolution).
-        </p>
-        
-        <h4>Contributions</h4>
-        <ul>
-            <li>Bayesian reinterpretation of Regularization by Denoising (RED).</li>
-            <li>Development of efficient samplers combining MCMC and deep priors.</li>
-            <li>Theoretical analysis of ergodicity and convergence rates.</li>
-            <li>Applications to medical imaging and large-scale datasets.</li>
-        </ul>
-    </div>
-</section>
-<!-- Publications Section -->
-<section id="publis" class="py-5">
-    <div class="container">
-        <h2 class="mb-4">Publications</h2>
 
-        <h3>Preprints</h3>
-        <div class="mb-4">
+    <!-- Thesis Section -->
+    <section id="thesis" class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Ph.D. Thesis</h2>
+            <p><strong>Title:</strong> Bayesian approaches for inverse problems in imaging: models, algorithms, and applications.</p>
+            <p><strong>Supervisors:</strong> Mame Diarra Fall (Université d’Orléans), Nicolas Dobigeon (Université de Toulouse).</p>
+            <p><strong>Affiliation:</strong> Institut Denis Poisson (Université d’Orléans / Université de Tours / CNRS).</p>
+            
+            <h4>Abstract</h4>
             <p>
-                [2025] E. C. Faye, M. D. Fall, N. Dobigeon, 
-                <em>Efficient posterior sampling for Bayesian imaging with explicit score function-based priors</em>, submitted.
+                This thesis addresses inverse problems in imaging under a Bayesian framework. 
+                The central focus is on the integration of data-driven priors into probabilistic models, 
+                combined with advanced Markov Chain Monte Carlo (MCMC) algorithms such as Langevin-within-split Gibbs sampling and 
+                Hessian Riemannian methods. We investigate theoretical properties, including convergence and uncertainty quantification, 
+                and demonstrate applications in medical imaging (e.g., positron emission tomography) and general image restoration tasks 
+                (denoising, deblurring, inpainting, super-resolution).
             </p>
-            <p class="text-muted">
-                <strong>Abstract:</strong> We propose a novel posterior sampling strategy for Bayesian imaging that leverages explicit score function-based priors. The method integrates state-of-the-art denoisers into an MCMC framework, enabling efficient exploration of high-dimensional distributions. Experimental results demonstrate improved convergence properties and reconstruction quality compared to classical approaches.
-            </p>
+            
+            <h4>Contributions</h4>
+            <ul>
+                <li>Bayesian reinterpretation of Regularization by Denoising (RED).</li>
+                <li>Development of efficient samplers combining MCMC and deep priors.</li>
+                <li>Theoretical analysis of ergodicity and convergence rates.</li>
+                <li>Applications to medical imaging and large-scale datasets.</li>
+            </ul>
         </div>
-        <div class="mb-4">
-            <p>
-                [2024] M. D. Fall, E. C. Faye, 
-                <em>Evidential Deep Learning for Uncertainty Quantification in Knee Osteoarthritis diagnosis</em>, submitted.
-            </p>
-            <p class="text-muted">
-                <strong>Abstract:</strong> This work investigates evidential deep learning methods for medical imaging, focusing on the automatic diagnosis of knee osteoarthritis. By explicitly modeling predictive uncertainty, we provide interpretable confidence intervals that enhance clinical reliability. Results highlight the potential of evidential networks for medical decision support.
-            </p>
-        </div>
+    </section>
 
-        <h3>Journal Papers</h3>
-        <div class="mb-4">
-            <p>
-                [2025] E. C. Faye, M. D. Fall, N. Dobigeon, 
-                <em>Regularization by denoising: Bayesian model and Langevin-within-split Gibbs sampling</em>, 
-                IEEE Trans. Image Processing, vol. 34, pp. 221-234.
-            </p>
-            <p class="text-muted">
-                <strong>Abstract:</strong> We revisit the Regularization by Denoising (RED) framework from a Bayesian perspective. Our contribution introduces a consistent probabilistic formulation and a dedicated sampler — the Langevin-within-split Gibbs algorithm. We provide theoretical guarantees on ergodicity and demonstrate superior performance in denoising, deblurring, and super-resolution tasks.
-            </p>
-        </div>
+    <!-- Publications Section -->
+    <section id="publis" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Publications</h2>
 
-        <h3>Conference Papers</h3>
-        <div class="mb-4">
-            <p>
-                [2025] M. D. Fall, E. C. Faye, 
-                <em>Which uncertainty quantification method in deep learning models for knee Osteoarthritis diagnosis?</em>, 
-                Proc. IEEE SSP.
-            </p>
-            <p class="text-muted">
-                <strong>Abstract:</strong> We compare Bayesian, evidential, and ensemble-based uncertainty quantification approaches in deep learning for medical imaging. Using knee osteoarthritis diagnosis as a benchmark, we highlight strengths and limitations of each method, providing guidelines for practitioners.
-            </p>
+            <h3>Preprints</h3>
+            <div class="mb-4">
+                <p>[2025] E. C. Faye, M. D. Fall, N. Dobigeon, <em>Efficient posterior sampling for Bayesian imaging with explicit score function-based priors</em>, submitted.</p>
+                <p class="text-muted"><strong>Abstract:</strong> We propose a novel posterior sampling strategy for Bayesian imaging that leverages explicit score function-based priors...</p>
+            </div>
+            <div class="mb-4">
+                <p>[2024] M. D. Fall, E. C. Faye, <em>Evidential Deep Learning for Uncertainty Quantification in Knee Osteoarthritis diagnosis</em>, submitted.</p>
+                <p class="text-muted"><strong>Abstract:</strong> This work investigates evidential deep learning methods for medical imaging, focusing on the automatic diagnosis of knee osteoarthritis...</p>
+            </div>
+
+            <h3>Journal Papers</h3>
+            <div class="mb-4">
+                <p>[2025] E. C. Faye, M. D. Fall, N. Dobigeon, <em>Regularization by denoising: Bayesian model and Langevin-within-split Gibbs sampling</em>, IEEE Trans. Image Processing, vol. 34, pp. 221-234.</p>
+                <p class="text-muted"><strong>Abstract:</strong> We revisit the Regularization by Denoising (RED) framework from a Bayesian perspective...</p>
+            </div>
+
+            <h3>Conference Papers</h3>
+            <div class="mb-4">
+                <p>[2025] M. D. Fall, E. C. Faye, <em>Which uncertainty quantification method in deep learning models for knee Osteoarthritis diagnosis?</em>, Proc. IEEE SSP.</p>
+                <p class="text-muted"><strong>Abstract:</strong> We compare Bayesian, evidential, and ensemble-based uncertainty quantification approaches...</p>
+            </div>
+            <div class="mb-4">
+                <p>[2024] E. C. Faye, M. D. Fall, A. Chetouani, N. Dobigeon, <em>Bayesian formulation of regularization by denoising – Model and Monte Carlo sampling</em>, Proc. IEEE MMSP, West Lafayette, USA.</p>
+                <p class="text-muted"><strong>Abstract:</strong> We establish a Bayesian interpretation of the RED approach and introduce a Monte Carlo sampling algorithm tailored to this framework...</p>
+            </div>
         </div>
-        <div class="mb-4">
-            <p>
-                [2024] E. C. Faye, M. D. Fall, A. Chetouani, N. Dobigeon, 
-                <em>Bayesian formulation of regularization by denoising – Model and Monte Carlo sampling</em>, 
-                Proc. IEEE MMSP, West Lafayette, USA.
-            </p>
-            <p class="text-muted">
-                <strong>Abstract:</strong> We establish a Bayesian interpretation of the RED approach and introduce a Monte Carlo sampling algorithm tailored to this framework. This study bridges the gap between deterministic optimization and probabilistic inference, and experimental results confirm the benefits in image restoration tasks.
-            </p>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Talks Section -->
-    <section id="talks" class="py-5 bg-light">
+    <section id="talks" class="py-5">
         <div class="container">
             <h2 class="mb-4">Talks & Seminars</h2>
-            <!-- Même contenu que ton code actuel -->
+            <!-- Ton contenu existant -->
         </div>
     </section>
 
     <!-- Teaching Section -->
-    <section id="teaching" class="py-5">
+    <section id="teaching" class="py-5 bg-light">
         <div class="container">
             <h2 class="mb-4">Teaching</h2>
-            <!-- Même contenu que ton code actuel -->
+            <!-- Ton contenu existant -->
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5">
         <div class="container">
             <h2 class="mb-4">Contact</h2>
-            <!-- Même contenu que ton code actuel -->
+            <!-- Ton contenu existant -->
         </div>
     </section>
 
